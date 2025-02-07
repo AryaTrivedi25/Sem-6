@@ -1,0 +1,21 @@
+{
+  "name": "guessing-game",
+  "version": "1.0.0",
+  "description": "A guessing game that utilizes a binary search algorithm and a substitution cipher.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [
+    "guessing",
+    "game",
+    "binary search",
+    "substitution cipher"
+  ],
+  "author": "Your Name",
+  "license": "ISC"
+}
