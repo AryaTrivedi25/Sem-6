@@ -1,0 +1,12 @@
+{
+    "name": "guessing-game",
+    "version": "1.0.0",
+    "description": "A simple guessing game where the user tries to guess a randomly generated number.",
+    "main": "src/index.js",
+    "scripts": {
+      "start": "node src/index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {}
+  }

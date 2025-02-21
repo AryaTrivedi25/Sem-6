@@ -1,0 +1,206 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+}
+
+.logo {
+    width: 50px;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Booking form styles */
+.booking-form {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.booking-form h2 {
+    margin-top: 0;
+    color: #0077b6;
+    text-align: center;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form input[type="date"],
+.booking-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.booking-form input[type="submit"] {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.booking-form input[type="submit"]:hover {
+    background-color: #005f86;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    outline: none;
+    border-color: #0077b6;
+    box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
+}
+
+
+
+/* Heritage Sites section styles */
+.heritage-sites {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.heritage-sites h2 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+/* Site gallery styles */
+.site-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.site-gallery a {
+    display: block;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+    text-align: center;
+}
+
+.site-gallery a:hover {
+    transform: scale(1.05);
+    border-color: #0077b6;
+}
+
+.site-gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid #ddd;
+}
+
+.site-gallery img:hover {
+    border-bottom-color: #0077b6;
+}
+
+
+/* Photo gallery styles */
+.photo-gallery {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.photo-gallery h2 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking - Chennai</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Chennai</h1>
+            <img src="https://www.shutterstock.com/shutterstock/photos/2229797413/display_1500/stock-vector-namma-chennai-logo-vector-illustration-chennai-is-the-capital-city-of-the-south-indian-state-of-2229797413.jpg" alt="Logo" class="logo">
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="heritage.html">Heritage</a></li>
+                    <li><a href="hotel_booking.html">Hotel Booking</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="booking-form">
+        <div class="container">
+            <h2>Book Your Stay</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="checkin">Check-in Date:</label><br>
+                <input type="date" id="checkin" name="checkin"><br>
+                <label for="checkout">Check-out Date:</label><br>
+                <input type="date" id="checkout" name="checkout"><br>
+                <label for="room">Room Type:</label><br>
+                <select id="room" name="room">
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="suite">Suite</option>
+                </select><br>
+                <input type="submit" value="Book Now">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
