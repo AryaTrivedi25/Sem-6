@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS3 Selectors Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    #header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .intro {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #333;
+    }
+
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-size: 1.2rem;
+    }
+
+    a:hover {
+      color: #ff5733;
+    }
+
+    .description::before {
+      content: "➡️ ";
+      font-size: 1.5rem;
+      color: #007BFF;
+    }
+
+    .content p {
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .content > p {
+      font-weight: bold;
+      color: #007BFF;
+    }
+
+    .content h2 ~ p {
+      font-style: italic;
+      color: #444;
+    }
+
+    .content p:nth-child(odd) {
+      background-color: #e7f7ff;
+      padding: 10px;
+    }
+
+    .content p:nth-child(even) {
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="header">
+    <h1>Welcome to CSS3 Selectors</h1>
+  </div>
+
+  <div class="intro">
+    <p>Learn how to use different CSS3 selectors in this example.</p>
+  </div>
+
+  <div class="content">
+    <h2>Introduction</h2>
+    <p class="description">This paragraph is styled using a pseudo-element.</p>
+    <p>This is a normal paragraph.</p>
+    <p class="highlight">This is a highlighted paragraph with a class selector.</p>
+    <p>This is another paragraph.</p>
+    <p>This paragraph is targeted by a pseudo-class.</p>
+    <a href="https://www.example.com">Click here to visit Example</a>
+  </div>
+
+</body>
+</html>

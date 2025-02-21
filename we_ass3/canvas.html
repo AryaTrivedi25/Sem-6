@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Image</title>
+</head>
+<body>
+    <h2>Draw Image Using Canvas</h2>
+    <canvas id="myCanvas" width="500" height="400" style="border:1px solid #000;"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        const img = new Image();
+        img.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6F8gdRyYTWu3Ljqok-jOXhO41eBoQzy4JYA&s'; // Replace with your image path
+        img.onload = function () {
+            ctx.drawImage(img, 50, 50, 400, 300);
+        };
+    </script>
+</body>
+</html>
+    

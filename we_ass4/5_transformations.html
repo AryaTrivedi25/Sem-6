@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Transformations & Animations</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition: all 0.5s ease;
+        }
+        
+        .box:hover {
+            transform: rotate(45deg) scale(1.2);
+            background: blue;
+        }
+        
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-50px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        
+        .animate {
+            animation: bounce 2s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box animate" style="margin-top: 20px;"></div>
+</body>
+
+</html>

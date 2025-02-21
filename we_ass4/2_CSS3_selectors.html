@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Selectors</title>
+    <style>
+        p:first-child {
+            color: red;
+        }
+        
+        .highlight {
+            font-weight: bold;
+        }
+        
+        #unique {
+            background-color: yellow;
+        }
+        
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+        
+        a:hover {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p>First paragraph (Red due to first-child selector).</p>
+    <p class="highlight">Bold text (highlight class).</p>
+    <p id="unique">This paragraph has a yellow background (unique ID).</p>
+    <input type="text" placeholder="Styled Input">
+    <a href="#">Hover me (changes to green)</a>
+</body>
+
+</html>
